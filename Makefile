@@ -25,7 +25,7 @@ TEST_CLIENT_OBJS=VideoPlayer.o \
 
 all: $(CLIENT) $(TEST_CLIENT)
 
-%.o : %.cc
+%.o : %.cc %.h
 	g++ -c $< $(CXXFLAGS) -o $@ -DBUFFER_SIZE=40960
 
 

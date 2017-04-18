@@ -40,7 +40,7 @@ class VideoPlayer {
   bool stream(const char* data, size_t length);
 
   bool stream(std::string const& data) {
-    stream(data.c_str(), data.size());
+    return stream(data.c_str(), data.size());
   }
 
   // Waits until the user has closed the video window, or a playback

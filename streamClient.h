@@ -40,7 +40,7 @@ bool parseArgs(int argc, char *argv[], char **playlistUrlStr) {
     }   
   }
 
-  if (!playlistUrlStr) {
+  if (!*playlistUrlStr) {
     helpMessage(argv[0], std::cout);
     return false;
   }
